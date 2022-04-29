@@ -1,0 +1,46 @@
+body {
+  background-color: teal;
+}
+.container > div {
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2 > div {
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container3 > div {
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container4 > div {
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div:nth-child(even) {
+  background-color: brown;
+}
+
+.container > div:nth-child(odd) {
+  background-color: yellow;
+}
+.container4 > div:nth-child(even) {
+  background-color: brown;
+}
+
+.container4 > div:nth-child(odd) {
+  background-color: yellow;
+}

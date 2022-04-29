@@ -1,0 +1,80 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* شامل ۳ ستون است */
+  grid-template-rows: 100px 1fr; /* شامل ۲ سطر است */
+  gap: 10px; /* فاصله بین هم ستون و هم سطر */
+  row-gap: 10px; /* فاصله بین سطر ها */
+  column-gap: 10px; /* فاصله بین ستون ها */
+}
+
+/* ------------------------------------------------ */
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 300px 100px;
+  gap: 5px;
+}
+.header2 {
+  background-color: darkgoldenrod;
+  grid-column: 1/-1; /* از لاین ۱ تا انتها ادامه داشته باشد */
+}
+.menu2 {
+  background-color: white;
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+.content2 {
+  background-color: yellowgreen;
+  grid-column: 3/-1;
+}
+.footer2 {
+  background-color: brown;
+  grid-column: 3 / span2; /* از لاین ۱ و ۲ ستون به جلو ادامه داشته باشد */
+}
+
+/* ------------------------------------------------ */
+
+.container3 {
+  display: grid;
+  grid-template-rows: 100px 300px 100px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "m m f f f f f f f f f f";
+  gap: 5px;
+}
+.header3 {
+  background-color: darkgoldenrod;
+  grid-area: h;
+}
+.menu3 {
+  background-color: white;
+  grid-area: m;
+}
+.content3 {
+  background-color: yellowgreen;
+  grid-area: c;
+}
+.footer3 {
+  background-color: brown;
+  grid-area: f;
+}
+
+/* ------------------------------------------------ */
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+  grid-auto-rows: 100px;
+  gap: 5px;
+}
+
+/* ------------------------------------------------ */
+
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 5px;
+}
