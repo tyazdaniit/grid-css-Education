@@ -69,12 +69,3 @@
   grid-auto-rows: 100px;
   gap: 5px;
 }
-
-/* ------------------------------------------------ */
-
-.container5 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 100px 100px;
-  gap: 5px;
-}

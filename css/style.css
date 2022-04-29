@@ -33,14 +33,13 @@ body {
 .container > div:nth-child(even) {
   background-color: brown;
 }
-
 .container > div:nth-child(odd) {
   background-color: yellow;
 }
+
 .container4 > div:nth-child(even) {
   background-color: brown;
 }
-
 .container4 > div:nth-child(odd) {
   background-color: yellow;
 }
